@@ -1,0 +1,26 @@
+{
+  "name": "graph-melodyni",
+  "version": "1.0.0",
+  "description": "",
+  "main": "graph.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/step-batch-7/graph-melodyni.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/step-batch-7/graph-melodyni/issues"
+  },
+  "homepage": "https://github.com/step-batch-7/graph-melodyni#readme",
+  "devDependencies": {
+    "mocha": "^7.2.0"
+  }
+}
