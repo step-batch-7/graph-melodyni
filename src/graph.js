@@ -18,9 +18,8 @@ const parse = (pairs) => {
 const bfs = function (pairs, source, target) {
   graph = parse(pairs);
   const visited = [];
-  const queue = [];
-  queue.push(source);
-  while (queue.length != 0) {
+  const queue = [source];
+  while (queue.length) {
     const node = queue.shift();
     visited.push(node);
     const adjacent = graph[node] || [];
