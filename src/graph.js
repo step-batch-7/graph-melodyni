@@ -23,7 +23,6 @@ const bfs = function (pairs, source, target) {
   while (queue.length != 0) {
     const node = queue.shift();
     visited.push(node);
-    console.log(visited);
     const adjacent = graph[node] || [];
     if (adjacent.includes(target)) {
       return true;
