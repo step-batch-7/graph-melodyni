@@ -17,17 +17,17 @@ const parse = (pairs) => {
 
 const bfs = function (pairs, source, target) {
   graph = parse(pairs);
-  const visited = [];
+  const visited = new Set();
   const queue = [source];
   while (queue.length) {
     const node = queue.shift();
-    visited.push(node);
+    visited.add(node);
     const adjacent = graph[node] || [];
     if (adjacent.includes(target)) {
       return true;
     }
     adjacent.forEach((node) => {
-      if (!visited.includes(node) && !queue.includes(node)) {
+      if (!visited.has(node) && !queue.includes(node)) {
         queue.push(node);
       }
     });

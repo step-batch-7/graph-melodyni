@@ -12,10 +12,10 @@ describe('bfs', () => {
   it('should return true if there is path to itself', () => {
     assert.strictEqual(bfs(pairs, 'aa', 'aa'), true);
   });
-  it('should return true if there is no path to itself', () => {
+  it('should return false if there is no path to itself', () => {
     assert.strictEqual(bfs(pairs, 'nn', 'nn'), false);
   });
-  it('should return true if there is no path from source to target', () => {
+  it('should return false if there is no path from source to target', () => {
     assert.strictEqual(bfs(pairs, 'bb', 'jj'), false);
   });
 });
